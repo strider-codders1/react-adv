@@ -19,7 +19,7 @@ const LazyLayout = lazy(() =>
 export const routes: Route[] = [
 	{
 		path: "/lazyload/*",
-		to: "/lazyload/",
+		to: "/lazyload",
 		Component: LazyLayout,
 		name: "LazyLayout - Dash",
 	},
