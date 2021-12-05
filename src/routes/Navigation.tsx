@@ -5,6 +5,7 @@ import {
 	NavLink,
 	Navigate,
 } from "react-router-dom";
+<<<<<<< HEAD
 import {
 	FormikAbstractation,
 	FormikBasicPage,
@@ -14,6 +15,9 @@ import {
 } from "../03-forms/pages";
 import { DynamicForm } from "../03-forms/pages/DynamicForm";
 import { RegisterFormikPage } from "../03-forms/pages/RegisterFormikPage";
+=======
+import { ShoppingPage } from "../02-components-patterns/pages/ShoppingPage";
+>>>>>>> bd84c23ae6b546efe1cbe732a18d46a050667544
 import logo from "../logo.svg";
 
 export const Navigation = () => {
@@ -30,21 +34,34 @@ export const Navigation = () => {
 									isActive ? "nav-active" : ""
 								}
 							>
+<<<<<<< HEAD
 								Register Page
+=======
+								Shopping
+>>>>>>> bd84c23ae6b546efe1cbe732a18d46a050667544
 							</NavLink>
 						</li>
 						<li>
 							<NavLink
+<<<<<<< HEAD
 								to="/formik-basic"
+=======
+								to="/about"
+>>>>>>> bd84c23ae6b546efe1cbe732a18d46a050667544
 								className={({ isActive }) =>
 									isActive ? "nav-active" : ""
 								}
 							>
+<<<<<<< HEAD
 								Formik Basic
+=======
+								About
+>>>>>>> bd84c23ae6b546efe1cbe732a18d46a050667544
 							</NavLink>
 						</li>
 						<li>
 							<NavLink
+<<<<<<< HEAD
 								to="/formik-yup"
 								className={({ isActive }) =>
 									isActive ? "nav-active" : ""
@@ -66,10 +83,14 @@ export const Navigation = () => {
 						<li>
 							<NavLink
 								to="/formik-abstractation"
+=======
+								to="/users"
+>>>>>>> bd84c23ae6b546efe1cbe732a18d46a050667544
 								className={({ isActive }) =>
 									isActive ? "nav-active" : ""
 								}
 							>
+<<<<<<< HEAD
 								Formik Abstractation
 							</NavLink>
 						</li>
@@ -101,12 +122,16 @@ export const Navigation = () => {
 								}
 							>
 								About
+=======
+								Users
+>>>>>>> bd84c23ae6b546efe1cbe732a18d46a050667544
 							</NavLink>
 						</li>
 					</ul>
 				</nav>
 
 				<Routes>
+<<<<<<< HEAD
 					<Route path="register" element={<RegisterPage />} />
 					<Route path="formik-basic" element={<FormikBasicPage />} />
 					<Route path="formik-yup" element={<FormikYupPage />} />
@@ -114,6 +139,12 @@ export const Navigation = () => {
 						path="formik-components"
 						element={<FormikComponents />}
 					/>
+=======
+					<Route path="about" element={<h1>About Page</h1>} />
+					<Route path="users" element={<h1>Users Page</h1>} />
+					<Route path="/" element={<ShoppingPage />}></Route>
+
+>>>>>>> bd84c23ae6b546efe1cbe732a18d46a050667544
 					<Route
 						path="formik-abstractation"
 						element={<FormikAbstractation />}
